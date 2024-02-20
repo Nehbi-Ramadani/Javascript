@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Caesar-Verschlüsselung</h1>
+
+<form id="caesarForm">
+    <label for="inputText">Text:</label>
+    <input type="text" id="inputText" name="inputText" required>
+    <br>
+    <label for="shiftKey">Schlüssel (Verschiebung):</label>
+    <input type="number" id="shiftKey" name="shiftKey" required>
+    <br>
+    <label for="outputText">Ergebnis:</label>
+    <input type="text" id="outputText" name="outputText" readonly>
+    <br>
+
+    <label for="operation">Operation:</label>
+    <select id="operation" name="operation">
+        <option value="encode">Kodierung</option>
+        <option value="decode">Dekodierung</option>
+    </select>
+    <br>
+
+    <button type="button" onclick="performOperation()">Durchführen</button>
+</form>
+
+    <script src="./main.js"></script>
+</body>
+</html>
